@@ -1,6 +1,7 @@
 import { Type } from 'class-transformer';
 import {
   IsArray,
+  IsDate,
   IsEnum,
   IsNumber,
   IsOptional,
@@ -17,6 +18,8 @@ class HhDataDto {
   middleSalary: number;
   @IsNumber()
   seniorSalary: number;
+  @IsDate()
+  updatedAt: Date;
 }
 
 class TopPageAdvantageDto {
